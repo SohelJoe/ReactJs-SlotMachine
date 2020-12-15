@@ -1,0 +1,127 @@
+h1{
+    text-align: center;
+}
+
+.slotMachine{
+    position: absolute;
+    width: 50%;
+    min-width: 357px;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.slotDisplay{
+    position: relative;
+    left: 1%;
+}
+
+.slotDisplay input{
+    background-color: wheat;
+    width: 30%;
+    margin: 0.7%;
+    height: 15vh;
+    text-align: center;
+    color: tomato;
+    font-size: 6.2rem;
+    border-radius: 5px;
+    border: 1px solid #c4c4c4;
+}
+
+.slotDisplay .bingo{
+    color: red;
+    background-color: burlywood;
+}
+
+.shuffle{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 5.5vh;
+}
+
+.shuffle button{
+    height: 6vh;
+    min-width: 50px;
+    width: 10vw;
+    min-width: 150px;
+    font-size: 1.4rem;
+    border-radius: 3px;
+    border: 1px solid #c4c4c4;
+    background-color: transparent;
+}
+
+.history{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 15vh;
+    z-index: 1;
+}
+
+.history textarea{
+    height: 50vh;
+    width: 40vw;
+    min-width: 350px;
+    resize: none;
+    text-align: center;
+    font-size: 6.5rem;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    background-color: wheat;
+}
+
+.congo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    margin-top: 15vh;
+    z-index: 2;
+    display: none;
+}
+
+.congo textarea{
+    height: 50vh;
+    width: 60vw;
+    min-width: 350px;
+    resize: none;
+    text-align: center;
+    font-size: 6rem;
+    line-height: 8rem;
+    color: red;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 1px solid #c4c4c4;
+    background-color: wheat;
+}
+
+@media only screen and (max-width: 1404px) and (min-width:900px) {
+    .slotDisplay input{
+        font-size: 6rem;
+    }
+    
+    .history textarea{
+        font-size: 7vw;
+    }
+
+    .congo textarea{
+        font-size: 5vw;
+        line-height: 7rem;
+    }
+}
+
+@media only screen and (max-width: 899px) {
+    .slotDisplay input{
+        font-size: 5.4rem;
+    }
+
+    .congo textarea{
+        font-size: 2.1rem;
+        line-height: 5rem;
+    }
+
+    .history textarea{
+        font-size: 4rem;
+    }
+}
